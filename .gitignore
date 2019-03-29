@@ -3,6 +3,7 @@
 *~
 .*
 
+/projeto_django/env/
 /site/
 /htmlcov/
 /coverage/

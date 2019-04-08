@@ -6,4 +6,7 @@ class MovieList(ListView):
     model = Movie
 
 class MovieDetail(DetailView):
-    model = Movie
+    queryset = (Movie.objects.all_with_related_persons())
+
+class PersonDetail(DetailView):
+    queryset = Person.objects.all_with_prefetch_movies()
